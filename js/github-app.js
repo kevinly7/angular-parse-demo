@@ -22,6 +22,6 @@ angular.module('GitHubApp', [])
                 })
                 .finally(function() {
                     $scope.loading = false;
-                })
+                });
         };
     });
