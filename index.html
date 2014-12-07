@@ -3,7 +3,7 @@
     <head lang="en">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>To-Do List</title>
+        <title></title>
 
         <!-- hotlink to Bootstrap CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
@@ -19,7 +19,7 @@
     </head>
 
     <body>
-        <main class="container-fluid" ng-app="ToDoApp" ng-controller="TasksController">
+        <main ng-app="ToDoApp" ng-controller="TasksController">
             <header class="page-header">
                 <img src="img/ring.png" alt="ring icon" class="pull-right"/>
                 <h1>Sauron's To-Do List</h1>
@@ -36,13 +36,9 @@
                                placeholder="title of new task" ng-model="newTask.title"/>
                     </div>
 
-                    <div>
-
                     <div class="form-group">
                         <label for="task-priority">Priority</label>
                         <rating max="3" ng-model="newTask.priority"></rating>
-                    </div>
-
                     </div>
 
                     <div class="form-group">
